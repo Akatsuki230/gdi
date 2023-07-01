@@ -4,6 +4,9 @@
 // makes screen black when program is run
 
 int main() {
+    auto window = GetConsoleWindow();
+    ShowWindow(window, SW_HIDE); // hide console window
+
     for (int i = 0; i < 10; ++i) { // this fixes everything dont ask
         int w = GetSystemMetrics(SM_CXSCREEN);
         int h = GetSystemMetrics(SM_CYSCREEN);
